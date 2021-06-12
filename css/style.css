@@ -977,7 +977,7 @@ img.with-border{
 	height:inherit;
 	width:100%;
 	background-size:cover; 
-	background-position:50% 50%;
+	background-position:10% 50%;
 	background-color:#FFF;
 	-webkit-transform: translateZ(0);
 	
@@ -1371,7 +1371,7 @@ img.with-border{
 	background-size:cover;
 	-webkit-background-size:cover;
 	background-attachment: scroll;
-	background-position:center center;
+	background-position: 10% 90%;
 	background-repeat:no-repeat;
 	color:#FFF;
 	-webkit-backface-visibility: hidden;
@@ -2673,7 +2673,7 @@ footer .image-divider.fixed-height{
 #banner-date{
 	font-family: 'Oswald', sans-serif; 
 	letter-spacing:3px; 
-	font-size:14px;
+	font-size:30px;
 }
 
 /* ----------------------------------------------*/
