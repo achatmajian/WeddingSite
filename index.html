@@ -40,7 +40,59 @@
 	<!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
 	<!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
 
+	<style>
+		#knee-pic {
+			background-image: url("css/knee.jpg");
+			background-repeat: no-repeat;
+			background-position: top 60% right 50%;
+			background-size: cover;
+			height: 800px;
+			/* width: 600px; */
+		}
 
+		.countdown-title {
+			margin-bottom: 70%;
+		}
+
+		.countdown-circles {
+			margin-top: -90%;
+		}
+
+		#footer-pic {
+			background-image: url("css/footer.jpg");
+			background-repeat: no-repeat;
+			background-position: top 50% left 50%;
+			background-size: cover;
+			height: 800px;
+		}
+
+
+		@media screen and (max-width: 414px) and (orientation: portrait) {
+			.countdown-circles {
+				margin-top: -70%;
+			}
+
+			#knee-pic {
+				background-color: #F6F6F6;
+				background-image: url("css/knee.jpg");
+				background-repeat: no-repeat;
+				background-position: top 60% right 80%;
+				background-size: 150%;
+				height: 500px;
+				width: auto;
+				/* padding: 20px; */
+				/* margin: 10px; */
+			}
+
+			#footer-pic {
+				background-image: url("css/footer.jpg");
+				background-repeat: no-repeat;
+				background-position: top 50% right 70%;
+				background-size: cover;
+				height: 800px;
+			}
+		}
+	</style>
 
 
 </head>
@@ -324,12 +376,9 @@
 		</section>
 
 		<!-- PHOTO DIVIDER -->
-		<section id="photo-divider">
-			<div class="image-divider fixed-height"
-				style="background-image:url(images/knee.jpg); height:800px; background-position: center;"
-				data-stellar-background-ratio="0.3">
-			</div>
-		</section>
+
+		<div class="image-divider" id="knee-pic" data-stellar-background-ratio="0.3">
+		</div>
 
 
 		<!-- OUR STORY SECTION -->
@@ -646,12 +695,12 @@
 								WHERE <span class="and">&amp;</span> WHERE
 							</h2>
 
-							<p>
+							<!-- <p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
 								quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor
 								fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit
 								faucibus. Proin pulvinar congue ex, vitae
-							</p>
+							</p> -->
 
 
 						</div>
@@ -760,13 +809,13 @@
 							</div>
 
 
-							<div class="text-center animation fadeInUp">
+							<!-- <div class="text-center animation fadeInUp">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada
 									ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur
 									dolor fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam mauris non
 									hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum,
 									mi ut sodales gravida.</p>
-							</div>
+							</div> -->
 
 							<div class="text-center">
 								<a href="#rsvp-section"
@@ -1143,15 +1192,18 @@
 					<div class="row">
 						<div class="col-md-offset-2 col-md-8">
 
-							<h2 id="dont-miss-it-title" class="text-center animation fadeInUp">Don't Miss It!</h2>
+							<div class="countdown-title">
+								<h2 id="dont-miss-it-title" class="text-center animation fadeInUp">Don't Miss It!</h2>
+							</div>
 
-							<div class="text-center animation fadeInUp">
+
+							<!-- <div class="text-center animation fadeInUp">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada
 									ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur
 									dolor fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam mauris non
 									hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum,
 									mi ut sodales gravida.</p>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -1159,7 +1211,10 @@
 					<div class="row">
 						<div class="col-md-offset-3 col-md-6">
 
-							<div id="date-countdown" class="circle-countdown animation fadeInUp"></div>
+							<div class="countdown-circles">
+								<div id="date-countdown" class="circle-countdown animation fadeInUp"></div>
+							</div>
+
 
 						</div>
 					</div>
@@ -2146,12 +2201,12 @@
 								RSVP
 							</h2>
 
-							<p>
+							<!-- <p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
 								quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor
 								fermentum, tincidunt metus. Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit
 								faucibus. Proin pulvinar congue ex, vitae
-							</p>
+							</p> -->
 
 
 						</div>
@@ -2216,9 +2271,7 @@
 
 	<!-- FOOTER SECTION -->
 	<footer>
-		<div class="image-divider fixed-height"
-			style="background-image:url(images/footer.jpg); background-position: 50% 100%"
-			data-stellar-background-ratio="0.5">
+		<div class="image-divider fixed-height" id="footer-pic" data-stellar-background-ratio="0.5">
 
 			<div class="divider-overlay"></div>
 

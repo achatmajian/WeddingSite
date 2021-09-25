@@ -20,7 +20,7 @@
 			}
 		}
 	
-		$email_to  =  'alissab17@gmail.com'; 
+		$email_to  =  'arek.chatmajian@gmail.com'; 
 		
 		$headers = "From: ".$_POST["inputemail"]."\r\n";	
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";	
