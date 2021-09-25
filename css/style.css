@@ -3728,3 +3728,20 @@ footer .image-divider.fixed-height{
 .more-events > * {
 	display: none;
 }
+
+/* #knee-pic {
+	background-image: url("css/knee.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+	width: 600px;
+} */
+
+/* @media screen and (max-width: 414px) and (orientation: portrait) {
+	#knee-pic {
+		background-image: url(images/knee.jpg); 
+		height: 800px; 
+		background-position: right: ;
+	}
+  } */
