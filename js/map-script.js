@@ -16,7 +16,7 @@ function initialize() {
 	var mapOptions = {
 		zoom: 18,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		center: new google.maps.LatLng(-74.055641, 41.046162),
+		center: new google.maps.LatLng(41.04625, -74.0561),
 		panControl: true,
 		zoomControl: true,
 		mapTypeControl: true,
@@ -54,13 +54,13 @@ var marker1 = new google.maps.Marker({
 	//ADD NEW MARKER WITH LABEL
 	//=======================================================================================
 	var marker1 = new MarkerWithLabel({
-		position: new google.maps.LatLng(41.046160, -74.055640),
+		position: new google.maps.LatLng(41.04625, -74.0561),
 		draggable: false,
 		raiseOnDrag: false,
 		icon: ' ',
 		map: map,
 		labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-		labelAnchor: new google.maps.Point(29, 20),
+		labelAnchor: new google.maps.Point(33, 22),
 		labelClass: "labels" // the CSS class for the label
 	});
 
@@ -135,7 +135,7 @@ var marker1 = new google.maps.Marker({
 	//INFO WINDOWS
 	//=======================================================================================
 	var contentString = '<div>' +
-		'WEDDING CEREMONY';
+		'Engagement Party';
 	'</div>';
 
 	var contentString1 = '<div>' +
@@ -162,25 +162,31 @@ var marker1 = new google.maps.Marker({
 		infowindow.open(map, marker1);
 	});
 
+	// google.maps.event.addListener(marker, 'click', (function (marker, i) {
+	// 	return function () {
+	// 		window.location.href = marker.url;
+	// 	}
+	// })(marker, i));
+
 	//ON MARKER CLICK EVENTS
 	//=======================================================================================
-	/*google.maps.event.addListener(marker, 'click', function() {
-				map.setZoom(17);
-	map.setCenter(marker.getPosition());
-	infowindow.open(map,marker);
+	google.maps.event.addListener(marker, 'click', function () {
+		map.setZoom(17);
+		map.setCenter(marker.getPosition());
+		infowindow.open(map, marker);
 	});
-	
-google.maps.event.addListener(marker1, 'click', function() {
-				map.setZoom(17);
-	map.setCenter(marker.getPosition());
-	infowindow1.open(map,marker1);
+
+	google.maps.event.addListener(marker1, 'click', function () {
+		map.setZoom(17);
+		map.setCenter(marker.getPosition());
+		infowindow1.open(map, marker1);
 	});
-	
-google.maps.event.addListener(marker2, 'click', function() {
-				map.setZoom(17);
-	map.setCenter(marker.getPosition());
-	infowindow1.open(map,marker2);
-	});*/
+
+	google.maps.event.addListener(marker2, 'click', function () {
+		map.setZoom(17);
+		map.setCenter(marker.getPosition());
+		infowindow1.open(map, marker2);
+	});
 
 	//ON BOUND EVENTS AND WINDOW RESIZE
 	//=======================================================================================

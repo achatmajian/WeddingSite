@@ -302,13 +302,13 @@ $(document).ready(function () {
 
 		// 04.6 Stellar Parallax
 		//------------------------------------------------------------------------------
-		if (!device.tablet() && !device.mobile() && !isIE9() && !isIE10() && !isSafari()) {
-			$(".image-divider").css("background-attachment", "fixed");
-			$(window).stellar({
-				horizontalScrolling: false,
-				responsive: true,
-			});
-		}
+		// if (!device.tablet() && !device.mobile() && !isIE9() && !isIE10() && !isSafari()) {
+		// 	$(".image-divider").css("background-attachment", "fixed");
+		// 	$(window).stellar({
+		// 		horizontalScrolling: false,
+		// 		responsive: true,
+		// 	});
+		// }
 
 	}); // END of Pace on Hide
 

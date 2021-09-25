@@ -3613,7 +3613,8 @@ p{
 /* 14.7 More Events Section						 */
 /* ----------------------------------------------*/
 #more-events{
-	padding: 80px 0
+	padding: 80px 0;
+	display: none;
 }
 
 /* ----------------------------------------------*/
@@ -3721,4 +3722,9 @@ footer .image-divider.fixed-height{
 	letter-spacing:3px; 
 	margin-top:10px;
 }
+}
+
+/* Custom Styles */
+.more-events > * {
+	display: none;
 }
