@@ -706,7 +706,7 @@ img.with-border{
 	position:fixed; 	
 	z-index:1000;
 	top:30px;
-	-webkit-transform: translateZ(0);
+	/* -webkit-transform: translateZ(0); */
 }
 
 
@@ -950,11 +950,12 @@ img.with-border{
 /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
 /* ----------------------------------------------*/
 #main-slider .flex-control-nav, .flex-control-paging{
-	 background-color:transparent; !important;
-	 margin:0; padding:0;
-	 position:absolute;
-	 bottom:0;
-	 z-index:4;
+	 background-color:transparent !important;
+	 margin: 0; 
+	 padding:0;
+	 position: absolute;
+	 bottom: 0;
+	 z-index: 4;
 }
 
 #main-slider.flexslider .flex-direction-nav .flex-prev { left: 0px; }
@@ -979,7 +980,7 @@ img.with-border{
 	background-size:cover; 
 	background-position:10% 50%;
 	background-color:#FFF;
-	-webkit-transform: translateZ(0);
+	/* -webkit-transform: translateZ(0); */
 	
 }
 
@@ -1096,7 +1097,7 @@ img.with-border{
 	height:inherit; 
 	background-color:#000; 
 	opacity:0.3;
-	-webkit-transform: translateZ(0);
+	/* -webkit-transform: translateZ(0); */
 }
 
 /* ----------------------------------------------*/
@@ -1374,7 +1375,7 @@ img.with-border{
 	background-position: 10% 90%;
 	background-repeat:no-repeat;
 	color:#FFF;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 }
 
 .image-divider.mobile{
@@ -2953,7 +2954,7 @@ h2#dont-miss-it-title{
 /* -------------------------------------------*/
 .mfp-bg{
 	z-index:2000;
-	-webkit-transform: translateZ(0);
+	/* -webkit-transform: translateZ(0); */
 }
 
 .mfp-wrap {
@@ -3646,6 +3647,7 @@ p{
 }
 
 }
+}
 
 
 @media screen and (max-width: 320px) {
@@ -3729,19 +3731,16 @@ footer .image-divider.fixed-height{
 	display: none;
 }
 
-/* #knee-pic {
-	background-image: url("css/knee.jpg"); 
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 800px;
-	width: 600px;
-} */
+/* Arek Custom Styling */
 
-/* @media screen and (max-width: 414px) and (orientation: portrait) {
-	#knee-pic {
-		background-image: url(images/knee.jpg); 
-		height: 800px; 
-		background-position: right: ;
-	}
-  } */
+.custom-hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+
+.custom-link-style {
+	color:#0000FF;
+	text-decoration:underline;
+}
