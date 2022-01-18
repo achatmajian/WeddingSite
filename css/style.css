@@ -2817,7 +2817,7 @@ footer .image-divider.fixed-height{
 
 #map-canvas{
 	height:560px; 
-	width:100%; 
+	width: auto; 
 }
 
 /* ----------------------------------------------*/
@@ -3743,4 +3743,16 @@ footer .image-divider.fixed-height{
 .custom-link-style {
 	color:#0000FF;
 	text-decoration:underline;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	#location-info {
+		text-align: center;
+	}
+  }
+
+  
+.slide-content .scroller {
+	width: 1024px;
 }
