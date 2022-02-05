@@ -168,7 +168,7 @@
 		'<h4 id="firstHeading" class="firstHeading" style="text-align:center;">RECEPTION</h4>' +
 		'<div id="bodyContent">' +
 		"Location: Palisadium, USA" + "<br><br>" +
-		"Address: 700 Palisadium Dr #3239, Fort Lee, NJ 07024" + "<br><br>" +
+		"Address: 700 Palisadium Dr, Cliffside Park, NJ 07010" + "<br><br>" +
 		"Time: 6:30pm" + "<br><br>" +
 		"<a href='https://goo.gl/maps/d6EJvbAzx6escQpr8' target='_blank' class='custom-link-style'>Get Directions</a>";
 
